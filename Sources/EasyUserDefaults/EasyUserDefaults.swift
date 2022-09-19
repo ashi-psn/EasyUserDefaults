@@ -37,7 +37,7 @@ public extension EasyUserDefaults {
         userDefaults.set(newValue, forKey: key.keyValue)
         return value
     }
-    
+
     @discardableResult
     /// Set generics array value to userdefaults.
     /// - Parameter value: Generics value array.
@@ -48,7 +48,7 @@ public extension EasyUserDefaults {
         userDefaults.set(newValue, forKey: key.keyValue)
         return value
     }
-    
+
     @discardableResult
     /// Update value at index.
     /// - Parameters:
@@ -62,10 +62,10 @@ public extension EasyUserDefaults {
         }
         newValue[index] = value
         update(value: newValue)
-        
+
         return value
     }
-    
+
     @discardableResult
     /// Update all [Value].
     /// - Parameter value: Array<Value>
@@ -74,8 +74,7 @@ public extension EasyUserDefaults {
         userDefaults.set(value, forKey: key.keyValue)
         return value
     }
-    
-    
+
     @discardableResult
     /// Get all [Value].
     /// - Returns: Array<Value>
@@ -85,7 +84,7 @@ public extension EasyUserDefaults {
         }
         return result
     }
-    
+
     /// Delete value.
     /// - Parameter value: Value
     static func delete(value: Value) {
@@ -95,7 +94,7 @@ public extension EasyUserDefaults {
         }
         update(value: currentValue)
     }
-    
+
     /// Delete value at index.
     /// - Parameter index: Int
     static func delete(at index: Int) {
@@ -103,7 +102,7 @@ public extension EasyUserDefaults {
         currentValue.remove(at: index)
         update(value: currentValue)
     }
-    
+
     /// Delete all object.
     /// - Returns: Empty
     static func deleteAll() -> [Value] {
