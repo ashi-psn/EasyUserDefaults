@@ -14,10 +14,10 @@ public protocol UserDefaultsKeys: CustomStringConvertible{
     var keyValue: String { get }
 }
 
-extension UserDefaultsKeys {
+public extension UserDefaultsKeys {
     
     /// Default string description value.
-    public var description: String {
+    var description: String {
         keyValue
     }
 }

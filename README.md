@@ -16,7 +16,7 @@ A description of this package.
 Add the following entry in your Package.swift to start using EasyUserDefaults:
 
 ```swift
-.package(url: "https://github.com/ashi-psn/EasyUserDefaults.git", from: "0.0.1")
+.package(url: "https://github.com/ashi-psn/EasyUserDefaults.git", from: "0.0.5")
 ```
 
 and add dependency to your target:
