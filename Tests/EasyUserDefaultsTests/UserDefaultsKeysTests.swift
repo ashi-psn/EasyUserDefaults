@@ -14,5 +14,4 @@ class UserDefaultsKeysTests: XCTestCase {
         let mockKey = MockUserDefaultsKeys.test
         XCTAssertEqual(mockKey.keyValue, "test")
     }
-
 }

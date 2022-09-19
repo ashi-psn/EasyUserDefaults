@@ -11,7 +11,9 @@ import Foundation
 protocol MockStringEasyUserDefaultsProtocol: EasyUserDefaults where Value == String {}
 
 extension MockStringEasyUserDefaultsProtocol {
-    public static var key: UserDefaultsKeys { MockUserDefaultsKeys.string }
+    public static var key: UserDefaultsKeys {
+        MockUserDefaultsKeys.string
+    }
 }
 
 public struct MockStringEasyUserDefaults: MockStringEasyUserDefaultsProtocol {}
