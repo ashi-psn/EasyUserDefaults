@@ -10,9 +10,9 @@ A description of this package.
 [![Swift Compatibility](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fashi-psn%2FEasyUserDefaults%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/ashi-psn/EasyUserDefaults)
 [![Platform Compatibility](https://img.shields.io/endpoint?url=https://swiftpackageindex.com/api/packages/ashi-psn/EasyUserDefaults/badge?type=platforms)](https://swiftpackageindex.com/ashi-psn/EasyUserDefaults)
 
-## install
+## Add Library
 
-# Swift Package Manager
+### Swift Package Manager
 Add the following entry in your Package.swift to start using EasyUserDefaults:
 
 ```swift
@@ -24,3 +24,8 @@ and add dependency to your target:
 ```swift
 .target(name: "MyApp", dependencies: [.product(name: "EasyUserDefaults", package: "EasyUserDefaults")]),
 ```
+
+### CocoaPods
+
+
+### Carthage
