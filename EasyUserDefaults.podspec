@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "EasyUserDefaults"
-  spec.version = "0.0.4"
+  spec.version = "0.0.5"
   spec.summary = "Easy save data to UserDefaults."
   spec.homepage = "https://github.com/ashi-psn/EasyUserDefaults"
   spec.license = { :type => "MIT", :file => "LICENSE" }
