@@ -7,17 +7,7 @@
 
 import Foundation
 
-/// UserDefaultsKeys
-public protocol UserDefaultsKeys: CustomStringConvertible{
-    
-    /// UserDefaults key for save value.
+// UserDefaultsKeys
+public protocol UserDefaultsKeys {
     var keyValue: String { get }
-}
-
-public extension UserDefaultsKeys {
-    
-    /// Default string description value.
-    var description: String {
-        keyValue
-    }
 }
