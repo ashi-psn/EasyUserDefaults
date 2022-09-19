@@ -1,0 +1,28 @@
+name: EasyUserDefaluts
+settings:
+  configs:
+    Debug:
+      IPHONEOS_DEPLOYMENT_TARGET: 9.0
+    Release:
+      IPHONEOS_DEPLOYMENT_TARGET: 9.0
+
+options:
+  bundleIdPrefix: net.ashipsn
+
+targets:
+  EasyUserDefaluts:
+    type: framework
+    platform: iOS
+    sources:
+      - Sources
+    preBuildScripts:
+      - path: ./Scripts/lint.sh
+        name: Run Swift Lint
+
+  EasyUserDefalutsTests:
+    type: bundle.unit-test
+    platform: iOS
+    dependencies:
+      - target: EasyUserDefaluts
+    sources:
+      - Tests
